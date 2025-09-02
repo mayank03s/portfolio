@@ -199,6 +199,55 @@ body.light-mode {
   animation: bg-pan 30s linear infinite;
 }
 
+/* Neural Network Background (new) */
+.hero-bg-neural {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(0,100,150,0.8), rgba(0,0,0,0.8));
+  overflow: hidden;
+  z-index: 1;
+}
+
+.hero-bg-neural::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(circle at center, rgba(0,224,255,0.1) 1px, transparent 1%),
+                    linear-gradient(to right, rgba(0,224,255,0.05) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(0,224,255,0.05) 1px, transparent 1px);
+  background-size: 30px 30px;
+  animation: neural-grid 60s linear infinite;
+}
+
+.hero-bg-neural::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, rgba(0,224,255,0.2) 0%, transparent 70%);
+  animation: neural-pulse 10s infinite ease-in-out;
+}
+
+@keyframes neural-grid {
+  0% { background-position: 0 0; }
+  100% { background-position: 100% 100%; }
+}
+
+@keyframes neural-pulse {
+  0% { transform: scale(0.8); opacity: 0.5; }
+  50% { transform: scale(1.2); opacity: 0.7; }
+  100% { transform: scale(0.8); opacity: 0.5; }
+}
+
+
 @keyframes bg-pan {
   0% { background-position: 0% 0%; }
   100% { background-position: 100% 100%; }
