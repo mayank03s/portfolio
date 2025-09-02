@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Doe | AI/ML Portfolio</title>
+    <meta name="description" content="Portfolio of John Doe, a B.Tech CSE student specializing in AI/ML from XYZ College.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
+    <style>
+        @media (prefers-reduced-motion: reduce) {
+            .hero-bg, .animate-on-scroll {
+                animation: none !important;
+                transition: none !important;
+            }
+        }
+    </style>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <header class="site-header">
+        <nav class="container">
+            <a href="#hero" class="site-logo">John Doe</a>
+            <button class="menu-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul id="main-nav" class="nav-links">
+                <li><a href="#hero" aria-label="Go to Home section">Home</a></li>
+                <li><a href="#about" aria-label="Go to About section">About</a></li>
+                <li><a href="#skills" aria-label="Go to Skills section">Skills</a></li>
+                <li><a href="#projects" aria-label="Go to Projects section">Projects</a></li>
+                <li><a href="#achievements" aria-label="Go to Achievements section">Achievements</a></li>
+                <li><a href="#contact" aria-label="Go to Contact section">Contact</a></li>
+                <li class="theme-toggle-container">
+                    <button id="theme-toggle" aria-label="Toggle dark and light theme">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section id="hero" class="hero-section">
+            <div class="hero-bg"></div>
+            <div class="container hero-content">
+                <h1 class="hero-title animate-fade-in-up">B.Tech CSE (AI/ML) Student, XYZ College</h1>
+                <p class="hero-subtitle animate-fade-in-up">Building intelligent systems with data, code, and curiosity.</p>
+                <div class="hero-buttons animate-fade-in-up">
+                    <a href="#projects" class="btn btn-primary" aria-label="View my projects">View Projects</a>
+                    <a href="/assets/resume.pdf" class="btn btn-secondary" download aria-label="Download my resume as a PDF file">Download Resume</a>
+                </div>
+                <div class="hero-stats animate-fade-in-up">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="2">0</span>
+                        <p>Years in AI/ML</p>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="10">0</span>
+                        <p>Projects</p>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="3">0</span>
+                        <p>Hackathons</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-grid">
+                    <div class="about-bio">
+                        <p class="animate-fade-in-up">AI/ML-focused undergrad exploring applied machine learning, MLOps, and model interpretability. Interested in NLP, recommender systems, and efficient deep learning. I'm passionate about creating solutions that leverage data to solve real-world problems.</p>
+                        <div class="interest-badges animate-fade-in-up">
+                            <span class="badge">NLP</span>
+                            <span class="badge">Recommender Systems</span>
+                            <span class="badge">MLOps</span>
+                            <span class="badge">Efficient DL</span>
+                        </div>
+                    </div>
+                    <div class="about-card glassmorphism animate-fade-in-up">
+                        <h3 class="card-title">Education</h3>
+                        <p><strong>B.Tech CSE (AI/ML)</strong>, XYZ College</p>
+                        <p>2023–2027</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title">Skills & Tech Stack</h2>
+                <div class="skills-controls">
+                    <input type="text" id="skill-filter" placeholder="Search for a skill..." aria-label="Search skills">
+                    <button id="toggle-skills" class="btn btn-secondary" aria-label="Show all or collapse skill categories">Show All</button>
+                </div>
+                <div id="skills-container" class="skills-grid">
+                    <div class="skill-category">
+                        <button class="accordion-header" aria-expanded="true">
+                            <i class="fa-solid fa-code"></i> Languages
+                        </button>
+                        <div class="accordion-content">
+                            <div class="skill-item" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="Python proficiency">
+                                <span class="skill-name">Python</span>
+                                <div class="progress-bar-container"><div class="progress-bar" style="width: 90%;"></div></div>
+                            </div>
+                            <div class="skill-item" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" aria-label="C/C++ proficiency">
+                                <span class="skill-name">C/C++</span>
+                                <div class="progress-bar-container"><div class="progress-bar" style="width: 75%;"></div></div>
+                            </div>
+                            <div class="skill-item" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" aria-label="JavaScript proficiency">
+                                <span class="skill-name">JavaScript</span>
+                                <div class="progress-bar-container"><div class="progress-bar" style="width: 60%;"></div></div>
+                            </div>
+                            <div class="skill-item" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="SQL proficiency">
+                                <span class="skill-name">SQL</span>
+                                <div class="progress-bar-container"><div class="progress-bar" style="width: 80%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <button class="accordion-header" aria-expanded="true">
+                            <i class="fa-solid fa-brain"></i> AI/ML
+                        </button>
+                        <div class="accordion-content">
+                            <div class="skill-item" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" aria-label="NumPy proficiency">
+                                <span class="skill-name">NumPy</span>
+                                <div class="progress-bar-container"><div class="progress-bar" style="width: 95%;"></div></div>
+                            </div>
+                            <div class="skill-item" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" aria-label="Pandas proficiency">
+                                <span class="skill-name">Pandas</span>
+                                <div class="progress-bar-container"><div class="progress-bar" style="width: 95%;"></div></div>
+                            </div>
+                            <div class="skill-item" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="Scikit-learn proficiency">
+                                <span class="skill-name">Scikit-learn</span>
+                                <div class="progress-bar-container"><div class="progress-bar" style="width: 85%;"></div></div>
+                            </div>
+                            <div class="skill-item" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="TensorFlow proficiency">
+                                <span class="skill-name">TensorFlow</span>
+                                <div class="progress-bar-container"><div class="progress-bar" style="width: 80%;"></div></div>
+                            </div>
+                            <div class="skill-item" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" aria-label="PyTorch proficiency">
+                                <span class="skill-name">PyTorch</span>
+                                <div class="progress-bar-container"><div class="progress-bar" style="width: 75%;"></div></div>
+                            </div>
+                            <div class="skill-item" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="XGBoost proficiency">
+                                <span class="skill-name">XGBoost</span>
+                                <div class="progress-bar-container"><div class="progress-bar" style="width: 85%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <button class="accordion-header" aria-expanded="true">
+                            <i class="fa-solid fa-chart-line"></i> Data/Viz
+                        </button>
+                        <div class="accordion-content">
+                            <div class="skill-item" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="Matplotlib proficiency">
+                                <span class="skill-name">Matplotlib</span>
+                                <div class="progress-bar-container"><div class="progress-bar" style="width: 85%;"></div></div>
+                            </div>
+                            <div class="skill-item" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="Seaborn proficiency">
+                                <span class="skill-name">Seaborn</span>
+                                <div class="progress-bar-container"><div class="progress-bar" style="width: 80%;"></div></div>
+                            </div>
+                            <div class="skill-item" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" aria-label="Plotly proficiency">
+                                <span class="skill-name">Plotly</span>
+                                <div class="progress-bar-container"><div class="progress-bar" style="width: 70%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <button class="accordion-header" aria-expanded="true">
+                            <i class="fa-solid fa-cloud"></i> MLOps/Cloud
+                        </button>
+                        <div class="accordion-content">
+                            <div class="skill-item" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="Git proficiency">
+                                <span class="skill-name">Git</span>
+                                <div class="progress-bar-container"><div class="progress-bar" style="width: 90%;"></div></div>
+                            </div>
+                            <div class="skill-item" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" aria-label="Docker proficiency">
+                                <span class="skill-name">Docker</span>
+                                <div class="progress-bar-container"><div class="progress-bar" style="width: 75%;"></div></div>
+                            </div>
+                            <div class="skill-item" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" aria-label="GitHub Actions proficiency">
+                                <span class="skill-name">GitHub Actions</span>
+                                <div class="progress-bar-container"><div class="progress-bar" style="width: 65%;"></div></div>
+                            </div>
+                            <div class="skill-item" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" aria-label="AWS proficiency">
+                                <span class="skill-name">AWS</span>
+                                <div class="progress-bar-container"><div class="progress-bar" style="width: 50%;"></div></div>
+                            </div>
+                            <div class="skill-item" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" aria-label="CI/CD basics proficiency">
+                                <span class="skill-name">CI/CD basics</span>
+                                <div class="progress-bar-container"><div class="progress-bar" style="width: 60%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <button class="accordion-header" aria-expanded="true">
+                            <i class="fa-solid fa-globe"></i> Web
+                        </button>
+                        <div class="accordion-content">
+                            <div class="skill-item" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="HTML5 proficiency">
+                                <span class="skill-name">HTML5</span>
+                                <div class="progress-bar-container"><div class="progress-bar" style="width: 85%;"></div></div>
+                            </div>
+                            <div class="skill-item" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="CSS3/SCSS proficiency">
+                                <span class="skill-name">CSS3/SCSS</span>
+                                <div class="progress-bar-container"><div class="progress-bar" style="width: 80%;"></div></div>
+                            </div>
+                            <div class="skill-item" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" aria-label="Node.js basics proficiency">
+                                <span class="skill-name">Node.js basics</span>
+                                <div class="progress-bar-container"><div class="progress-bar" style="width: 60%;"></div></div>
+                            </div>
+                            <div class="skill-item" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" aria-label="REST APIs proficiency">
+                                <span class="skill-name">REST APIs</span>
+                                <div class="progress-bar-container"><div class="progress-bar" style="width: 70%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title">Projects</h2>
+                <div class="projects-controls">
+                    <div class="filter-chips">
+                        <button class="filter-chip active" data-filter="all">All</button>
+                        <button class="filter-chip" data-filter="nlp">NLP</button>
+                        <button class="filter-chip" data-filter="cv">CV</button>
+                        <button class="filter-chip" data-filter="recommenders">Recommenders</button>
+                        <button class="filter-chip" data-filter="mlops">MLOps</button>
+                        <button class="filter-chip" data-filter="web">Web</button>
+                    </div>
+                    <input type="text" id="project-search" placeholder="Search projects..." aria-label="Search projects by title or tags">
+                </div>
+                <div id="projects-grid" class="projects-grid">
+                    <div class="project-card glassmorphism" data-tags="recommenders" data-stack="Python Pandas Surprise LightFM">
+                        <div class="project-image-container">
+                            <img src="/assets/img/project-recommender.jpg" data-src="/assets/img/project-recommender.jpg" alt="A screenshot of a movie recommendation system interface" class="lazy-image" loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">MovieLens Recommender</h3>
+                            <p class="project-description">Collaborative filtering model to predict user ratings on the MovieLens dataset.</p>
+                            <div class="project-tags">
+                                <span class="tag">Recommenders</span>
+                                <span class="tag">Python</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="#" class="btn btn-small" aria-label="Live demo of MovieLens Recommender" disabled><span class="tooltip-text">Live demo not available</span>Live Demo</a>
+                                <a href="https://github.com/johndoe-ai-ml/movielens-recommender" class="btn btn-small" target="_blank" rel="noopener noreferrer" aria-label="View MovieLens Recommender on GitHub">GitHub</a>
+                                <a href="#" class="btn btn-small" aria-label="Case study for MovieLens Recommender" disabled><span class="tooltip-text">Case study not available</span>Case Study</a>
+                            </div>
+                            <span class="project-status completed-badge">Completed</span>
+                        </div>
+                    </div>
+                    <div class="project-card glassmorphism" data-tags="nlp" data-stack="PyTorch Transformers">
+                        <div class="project-image-container">
+                            <img src="/assets/img/project-sentiment.jpg" data-src="/assets/img/project-sentiment.jpg" alt="A visual representation of sentiment analysis on tweets" class="lazy-image" loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Tweet Sentiment Classifier</h3>
+                            <p class="project-description">Fine-tuning a pre-trained BERT model for sentiment classification on Twitter data.</p>
+                            <div class="project-tags">
+                                <span class="tag">NLP</span>
+                                <span class="tag">PyTorch</span>
+                                <span class="tag">Transformers</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="#" class="btn btn-small" aria-label="Live demo of Tweet Sentiment Classifier" disabled><span class="tooltip-text">Live demo not available</span>Live Demo</a>
+                                <a href="https://github.com/johndoe-ai-ml/tweet-sentiment-classifier" class="btn btn-small" target="_blank" rel="noopener noreferrer" aria-label="View Tweet Sentiment Classifier on GitHub">GitHub</a>
+                                <a href="#" class="btn btn-small" aria-label="Case study for Tweet Sentiment Classifier" disabled><span class="tooltip-text">Case study not available</span>Case Study</a>
+                            </div>
+                            <span class="project-status completed-badge">Completed</span>
+                        </div>
+                    </div>
+                    <div class="project-card glassmorphism" data-tags="cv" data-stack="TensorFlow Grad-CAM">
+                        <div class="project-image-container">
+                            <img src="/assets/img/project-xray.jpg" data-src="/assets/img/project-xray.jpg" alt="An image of a chest X-ray with a medical analysis overlay" class="lazy-image" loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Pneumonia X-Ray Classifier</h3>
+                            <p class="project-description">Convolutional Neural Network (CNN) for classifying pneumonia from chest X-ray images.</p>
+                            <div class="project-tags">
+                                <span class="tag">CV</span>
+                                <span class="tag">TensorFlow</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="#" class="btn btn-small" aria-label="Live demo of Pneumonia X-Ray Classifier" disabled><span class="tooltip-text">Live demo not available</span>Live Demo</a>
+                                <a href="https://github.com/johndoe-ai-ml/pneumonia-xray-classifier" class="btn btn-small" target="_blank" rel="noopener noreferrer" aria-label="View Pneumonia X-Ray Classifier on GitHub">GitHub</a>
+                                <a href="#" class="btn btn-small" aria-label="Case study for Pneumonia X-Ray Classifier" disabled><span class="tooltip-text">Case study not available</span>Case Study</a>
+                            </div>
+                            <span class="project-status completed-badge">Completed</span>
+                        </div>
+                    </div>
+                    <div class="project-card glassmorphism" data-tags="mlops" data-stack="Docker GitHub-Actions AWS-S3">
+                        <div class="project-image-container">
+                            <img src="/assets/img/project-mlops.jpg" data-src="/assets/img/project-mlops.jpg" alt="A flowchart diagram of a machine learning operations pipeline" class="lazy-image" loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">MLOps Pipeline</h3>
+                            <p class="project-description">A simple CI/CD pipeline for model training, containerization, and deployment to AWS S3.</p>
+                            <div class="project-tags">
+                                <span class="tag">MLOps</span>
+                                <span class="tag">Docker</span>
+                                <span class="tag">GitHub Actions</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="#" class="btn btn-small" aria-label="Live demo of MLOps Pipeline" disabled><span class="tooltip-text">Live demo not available</span>Live Demo</a>
+                                <a href="https://github.com/johndoe-ai-ml/mlops-pipeline" class="btn btn-small" target="_blank" rel="noopener noreferrer" aria-label="View MLOps Pipeline on GitHub">GitHub</a>
+                                <a href="#" class="btn btn-small" aria-label="Case study for MLOps Pipeline" disabled><span class="tooltip-text">Case study not available</span>Case Study</a>
+                            </div>
+                            <span class="project-status completed-badge">Completed</span>
+                        </div>
+                    </div>
+                    <div class="project-card glassmorphism" data-tags="web" data-stack="Vanilla-JS SCSS">
+                        <div class="project-image-container">
+                            <img src="/assets/img/project-portfolio.jpg" data-src="/assets/img/project-portfolio.jpg" alt="A screenshot of a personal portfolio website" class="lazy-image" loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Personal Portfolio (This Website)</h3>
+                            <p class="project-description">Responsive, accessible portfolio built from scratch using HTML, SCSS, and vanilla JS.</p>
+                            <div class="project-tags">
+                                <span class="tag">Web</span>
+                                <span class="tag">Vanilla JS</span>
+                                <span class="tag">SCSS</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="#" class="btn btn-small" aria-label="Live demo of this website" disabled><span class="tooltip-text">You are here!</span>Live Demo</a>
+                                <a href="https://github.com/johndoe-ai-ml/personal-portfolio" class="btn btn-small" target="_blank" rel="noopener noreferrer" aria-label="View this portfolio on GitHub">GitHub</a>
+                                <a href="#" class="btn btn-small" aria-label="Case study for this portfolio" disabled><span class="tooltip-text">Case study not available</span>Case Study</a>
+                            </div>
+                            <span class="project-status in-progress-badge">In Progress</span>
+                        </div>
+                    </div>
+                    <div class="project-card glassmorphism" data-tags="mlops" data-stack="XGBoost CatBoost Optuna">
+                        <div class="project-image-container">
+                            <img src="/assets/img/project-automl.jpg" data-src="/assets/img/project-automl.jpg" alt="A diagram representing an automated machine learning workflow" class="lazy-image" loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Tabular AutoML Benchmark</h3>
+                            <p class="project-description">Comparing different AutoML frameworks (XGBoost, CatBoost) with hyperparameter tuning using Optuna.</p>
+                            <div class="project-tags">
+                                <span class="tag">MLOps</span>
+                                <span class="tag">XGBoost</span>
+                                <span class="tag">Optuna</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="#" class="btn btn-small" aria-label="Live demo of Tabular AutoML Benchmark" disabled><span class="tooltip-text">Live demo not available</span>Live Demo</a>
+                                <a href="
